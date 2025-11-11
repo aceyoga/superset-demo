@@ -79,4 +79,8 @@ PUBLIC_ROLE_LIKE = 'Gamma'
 WEBDRIVER_BASEURL = "http://superset:8088/"
 WEBDRIVER_BASEURL_USER_FRIENDLY = "http://localhost:80/"
 
+# Google Sheets / Shillelagh configuration
+# Disable catalog parameter for shillelagh to avoid compatibility issues
+PREVENT_UNSAFE_DEFAULT_URLS_ON_DATASET = False
+
 # Additional custom configuration can be added below

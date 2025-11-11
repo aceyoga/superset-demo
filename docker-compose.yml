@@ -24,7 +24,9 @@ services:
       - superset-demo
 
   superset:
-    image: apache/superset:3.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: superset_app
     restart: unless-stopped
     depends_on:
